@@ -48,7 +48,7 @@ public class GridScript : MonoBehaviour
             for(int j = 0; j<GridWidth;j++)
             {
                 
-                if(Dice1List == null)
+                if(Dice1List.Count == 0)
                 {
                     Dice1List.Add(Dices[i, j]);
                     continue;
@@ -57,9 +57,13 @@ public class GridScript : MonoBehaviour
                 {
                     Dice1List.Add(Dices[i, j]);
 
-                    if (Dice1List.Count == 2)
+                    if (Dice1List.Count == 3)
                     {
                         Debug.Log("Równe 3!!!!!!!!");
+                        foreach(GameObject GM in Dice1List)
+                        {
+                            Destroy(GM);
+                        }
                     }
                     continue;
                 }
@@ -78,5 +82,7 @@ public class GridScript : MonoBehaviour
     void Update()
     {
         CheckOK();
+
+
     }
 }
