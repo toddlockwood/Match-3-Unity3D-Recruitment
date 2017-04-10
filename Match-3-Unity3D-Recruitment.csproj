@@ -69,6 +69,7 @@
     <Compile Include="Assets\Resources\Scripts\ControlerScript.cs" />
     <Compile Include="Assets\Resources\Scripts\DiceColourScript.cs" />
     <Compile Include="Assets\Resources\Scripts\GridScript.cs" />
+    <Compile Include="Assets\Resources\Scripts\Kwardrat.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
